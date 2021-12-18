@@ -5,22 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/09f475160b.js" crossorigin="anonymous"></script>
-    <title>TechnoBuzz</title>
-    <!--<link rel="stylesheet" href="style.css">-->
     <style>
         .sidebar {
           margin: 0;
           padding: 0;
-          width: 300px;
+          width: 0px;
           background-color: #3998e6;
-          position:fixed;
+          position: fixed;
           height: 100%;
           overflow: auto;
         }
-        .sidebar h4{
-            text-align:center;
-        }
-
+        
         .sidebar a {
           display: block;
           color: black;
@@ -34,14 +29,22 @@
          color: white;
         }
 
-        .parent {
-          position:relative;
-          display:flex;
-          width: 50px;
-          height: 50px;
-          background: #3998e6;
-  
+        #parent {
+          max-width:800px;
+          height: 800px;
+          background:beige;
+          margin:0 auto;
+          /* auto means that the left and right margin are automatically set by the browser based on the container, to make element centered*/
+          
         }
+        #parent div{
+          width: 500px; 
+          height:100px; 
+          margin:10px;
+          background:yellowgreen;
+
+        }
+
         html,body
         {
             width: 100%;
@@ -54,33 +57,15 @@
     </style>
 </head>
 
+
 <body>
-    <div class="sidebar">
-        <img src=""  alt=""  width=""   height="">
-        <h4>TECHNOBUZ</h4>
-       <!-- <nav class="navelem">-->
-         <ol class="navbar" style="list-style: none;">
-         <li><a href="#home" class="active" class="nav-link">Home</a></li>
-         <li> <a href="#blogpost"   class="nav-link" target="_blank">Blogpost</a></li>
-         <li><a href="#contact"   class="nav-link" target="_blank">Contact</a></li>
-         <li><a href="#about"   class="nav-link" target="_blank">About</a></li>
-        <br/>
-         <li><a href="#" class="nav-link">
-              <i class="fab fa-facebook-square fa-2x"   style="font-size:46px;"></i>
-              <i class="fab fa-twitter-square fa-2x" style="font-size:46px;"></i>
-              <i class="	fab fa-instagram fa-2x"  style="font-size:46px;"></i>
-              <i class="fab fa-linkedin fa-2x" style="font-size:46px;"></i>
-            </a>
-          </li>
-        </ol> 
-      </div>
-    <div class="parent">
-     <div class="container">
-       <p>div1</p>
-     </div>
-     <div class="container">
-       <p>div2</p>
-     </div>
-    </div> 
+  <div id="parent">
+    <div>
+    First DIV
+    </div>
+    <div>
+    Second DIV
+    </div>
+  </div>  
 </body>
 </html>
