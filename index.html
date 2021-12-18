@@ -5,17 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/09f475160b.js" crossorigin="anonymous"></script>
+    <title>TechnoBuzz</title>
+    <!--<link rel="stylesheet" href="style.css">-->
     <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
         .sidebar {
           margin: 0;
           padding: 0;
-          width: 0px;
+          width: 300px;
           background-color: #3998e6;
-          position: fixed;
+          position:fixed;
           height: 100%;
           overflow: auto;
         }
-        
+        .sidebar h2{
+            text-align:center;
+        }
+
         .sidebar a {
           display: block;
           color: black;
@@ -28,9 +36,13 @@
          padding: 16px;
          color: white;
         }
+        
+        .sidebar ol.navbar span {
+        margin:5px;
+        }
 
         #parent {
-          max-width:800px;
+          max-width:1000px;
           height: 800px;
           background:beige;
           margin:0 auto;
@@ -44,7 +56,6 @@
           background:yellowgreen;
 
         }
-
         html,body
         {
             width: 100%;
@@ -57,15 +68,40 @@
     </style>
 </head>
 
-
 <body>
-  <div id="parent">
-    <div>
-    First DIV
-    </div>
-    <div>
-    Second DIV
-    </div>
-  </div>  
+  <aside>
+    <div class="sidebar">
+        <img src=""  alt=""  width=""   height="">
+        <br/>
+        <h2>TECHNOBUZ</h2>
+       <!-- <nav class="navelem">--> 
+         <ol class="navbar" style="list-style: none;">
+               <li><a href="#home" class="active" >
+                  <span><i class="fas fa-home"></i></span>Home</a></li>
+                <li> <a href="#blogpost" target="_blank">
+                  <span></span><i class="fas fa-blog"></i></span>Blogpost</a></li>
+                <li><a href="#contact"   target="_blank">
+                  <span><i class="fas fa-address-card"></i></span>Contact</a></li>
+                <li><a href="#about"   target="_blank">
+                  <span><i class="fas fa-info-circle"></i></span>About</a></li>
+        <br/>
+         <li><a href="#" target="_blank">
+              <i class="fab fa-facebook-square fa-2x" style="font-size:40px;"></i>
+              <i class="fab fa-twitter-square fa-2x" style="font-size:40px;"></i>
+              <i class="	fab fa-instagram fa-2x"    style="font-size:40px;"></i>
+              <i class="fab fa-linkedin fa-2x"       style="font-size:40px;"></i>
+            </a>
+          </li>
+        </ol> 
+      </div>
+    </aside>
+      <div id="parent">
+        <div>
+        First DIV
+        </div>
+        <div>
+        Second DIV
+        </div>
+      </div>  
 </body>
 </html>
